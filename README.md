@@ -1,73 +1,32 @@
-# 1727 — Calendário Editorial
+# Calendário 1727
 
-Site estático de planejamento e aprovação mensal de conteúdo da 1727 Coffee Roasters, pronto para publicar gratuitamente no GitHub Pages.
+Calendário editorial de novembro de 2026 para a 1727 Coffee Roasters, com **8 fotos, 2 espaços para vídeos**, datas, legendas e revisão de aprovação.
 
-## O que o site oferece
+## Acesso
 
-- Calendário mensal com **8 fotos e 2 espaços para vídeos** em novembro/2026.
-- Imagens reais do acervo, tratadas (cor/contraste/luz) e exportadas separadamente, com botão **Baixar foto**.
-- Legendas dos posts, datas e sugestões de vídeos.
-- Modo de revisão: **Pendente / Aprovado / Ajustar**, campo de observações, edição local de legendas.
-- Botão **Enviar feedback**: abre o compartilhamento do aparelho ou o WhatsApp com o resumo. Também pode **Copiar feedback** ou **Baixar avaliação (.json)**.
-- Organização reutilizável por mês; a URL principal sempre aponta para o `currentMonth`.
+Repositório: https://github.com/ZeroTrinta/calendario-1727
 
-> **Privacidade e sincronização:** um repositório público no GitHub Pages é acessível a qualquer pessoa com o endereço e pode aparecer em buscadores. Aprovações, observações e legendas editadas ficam apenas no navegador do visitante (`localStorage`). **Não são sincronizadas nem enviadas automaticamente para o GitHub.** Para receber a avaliação, o cliente precisa enviar o feedback pelo botão de compartilhamento ou copiar o texto. Para privacidade real ou aprovação centralizada, será necessário login e um backend mais adiante.
+Endereço planejado para GitHub Pages (após ativar em Settings → Pages): https://zerotrinta.github.io/calendario-1727/
 
-## Publicação inicial — GitHub Desktop (recomendado)
+## Recursos
 
-1. Abra o **GitHub Desktop** e use **File → New Repository**. Digite **1727-calendario**, descrição `Calendário editorial 1727`, e escolha uma pasta no computador.
-2. Abra a pasta que o GitHub Desktop criou para o repositório. **Copie para dentro dela o CONTEÚDO deste pacote** (`index.html`, `assets`, `data`, `imagens`, `videos`, `README.md`, `.nojekyll`, `.gitignore`). **Não coloque tudo dentro de uma pasta extra**, porque o `index.html` precisa ficar na raiz.
-3. No GitHub Desktop, escreva o resumo do commit (ex.: `Primeiro calendário — novembro 2026`), clique em **Commit to main** e em **Publish repository**.
-4. No GitHub, abra o repositório e vá em **Settings → Pages → Build and deployment**.
-5. Selecione **Deploy from a branch**, depois **Branch: main**, **Folder: /(root)** e salve.
-6. O endereço ficará no formato **https://zerotrinta.github.io/1727-calendario/** (use este endereço apenas depois de confirmar que o Pages publicou o site).
+- Fotos em `imagens/2026-11/` com links para baixar.
+- Legendas e datas em `data/calendario.js`.
+- Aprovação por post: Pendente, Aprovado, Ajustar; notas de revisão e edição de legendas.
+- Filtros de fotos e vídeos; envio ou download do resumo de feedback.
+- Visualização por mês, inclusive `?mes=2026-11`.
 
-Alternativa: criar o repositório em https://github.com/new e subir os arquivos pela interface do GitHub; o `index.html` deve ficar na raiz.
+**Importante:** as revisões são salvas somente no navegador via `localStorage`. Não são sincronizadas entre pessoas. Use **Enviar feedback**, **Copiar feedback** ou **Baixar avaliação** para encaminhá-las. Como o repositório é público, o conteúdo pode ser visto por qualquer pessoa.
 
-## Como atualizar os próximos meses
+## Publicar no GitHub Pages
 
-A estrutura foi feita para você continuar usando **o mesmo repositório e a mesma URL**.
+1. Abra **Settings → Pages** no repositório.
+2. Em **Build and deployment**, escolha **Deploy from a branch**.
+3. Selecione **main** e **/(root)**; clique em **Save**.
+4. A publicação fica disponível em https://zerotrinta.github.io/calendario-1727/ depois da implantação.
 
-1. Crie `imagens/AAAA-MM/` e adicione as fotos do próximo mês.
-2. Abra `data/calendario.js` e adicione outro objeto na lista `months`, seguindo o exemplo do mês `2026-11` (com `id`, `label`, `summary` e `posts`).
-3. Ajuste `currentMonth` para o mês mais recente, por exemplo `"2026-12"`.
-4. Cada post tem `id`, `date`, `type`, `title`, `category`, `caption`. Posts com foto usam `image`. Posts em vídeo usam `brief` e `videoUrl`.
-5. Faça **Commit** e **Push** pelo GitHub Desktop. O GitHub Pages atualizará o site automaticamente com a nova versão.
+## Próximos meses
 
-A URL de um mês específico pode ser compartilhada assim:
+Crie uma pasta `imagens/AAAA-MM/` para novas fotos, adicione o mês na lista `months` de `data/calendario.js` e atualize `currentMonth` para apontar ao mês mais recente. Para vídeos, informe `videoUrl` no respectivo post (pode ser um URL público ou arquivo MP4 incluído no repositório).
 
-```
-https://zerotrinta.github.io/1727-calendario/?mes=2026-11
-```
-
-## Como adicionar os vídeos
-
-No arquivo `data/calendario.js`, localize o post com `"type": "video"` e preencha o campo `"videoUrl"`:
-
-- Para um vídeo hospedado publicamente (por exemplo, uma URL de página do YouTube): `"videoUrl": "https://www.youtube.com/watch?v=..."` — aparece o botão **Assistir ao vídeo**.
-- Para MP4 hospedado no próprio repositório: coloque um vídeo comprimido em `videos/2026-11/` e use `"videoUrl": "videos/2026-11/cappuccino.mp4"` — aparece o player na página.
-
-Atenção ao limite de tamanho de arquivos do GitHub e ao consumo de banda do GitHub Pages. Vídeos grandes são melhores em plataforma própria e com link externo.
-
-## Estrutura
-
-```text
-1727-calendario/
-├── index.html             # página inicial
-├── assets/
-│   ├── app.js             # interface, filtros e aprovação local
-│   └── style.css          # identidade visual
-├── data/
-│   └── calendario.js      # posts e meses
-├── imagens/
-│   └── 2026-11/           # oito fotos editadas
-├── videos/
-│   └── 2026-11/           # espaço para vídeos futuros
-├── .nojekyll              # GitHub Pages serve arquivos diretamente
-├── .gitignore
-└── README.md
-```
-
-## Uso local
-
-O site foi montado sem dependências: abra `index.html` no navegador para pré-visualizar. Não precisa de npm, backend ou serviço pago.
+O projeto é estático, sem dependências ou backend. Os arquivos principais são `index.html`, `assets/app.js`, `assets/style.css` e `data/calendario.js`.
