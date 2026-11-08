@@ -1,0 +1,3 @@
+Você pode colocar seus vídeos MP4 comprimidos nesta pasta.
+Depois, preencha videoUrl no arquivo data/calendario.js.
+O site também aceita links externos de vídeos.

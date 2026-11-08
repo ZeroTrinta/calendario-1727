@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#243b2f">
+  <meta name="description" content="Planejamento e aprovação de conteúdo da 1727 Coffee Roasters.">
+  <title>1727 — Calendário Editorial</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="utility-strip"><span>1727 <i>coffee roasters</i></span><span>PLANEJAMENTO & APROVAÇÃO</span></div>
+  <header class="hero">
+    <nav class="top-nav" aria-label="Navegação principal">
+      <a class="brand" href="./" aria-label="1727 — Início"><span class="brand-mark">1727</span><span class="brand-sub">coffee roasters</span></a>
+      <div class="nav-actions"><label class="sr-only" for="monthSelect">Selecionar mês</label><select id="monthSelect" aria-label="Selecionar mês"></select><button type="button" id="reviewButton" class="outline-white">Enviar feedback <span aria-hidden="true">↗</span></button></div>
+    </nav>
+    <div class="hero-content"><p class="eyebrow">O SABOR ESTÁ NOS DETALHES · <span id="monthEyebrow">NOVEMBRO 2026</span></p><h1>Nosso calendário,<br><em>em boas mãos.</em></h1><p class="subtitle">Um espaço para visualizar, revisar e aprovar cada publicação da 1727. Tudo organizado, do primeiro rascunho à próxima xícara.</p></div>
+    <div class="hero-bottom"><span id="monthRange">PLANEJAMENTO MENSAL</span><span>1727 COFFEE ROASTERS · CAMPINAS / SP</span></div>
+  </header>
+  <main>
+    <section class="overview" aria-label="Resumo do mês">
+      <div class="overview-heading"><p class="section-overline">EDIÇÃO DO MÊS</p><h2 id="monthTitle">Novembro de 2026</h2><p id="monthSummary">O sabor está nos detalhes.</p></div>
+      <div class="metrics"><div><strong id="metricTotal">10</strong><span>PUBLICAÇÕES</span></div><div><strong id="metricPhotos">08</strong><span>FOTOS</span></div><div><strong id="metricVideos">02</strong><span>VÍDEOS</span></div><div><strong id="metricApproved">00</strong><span>APROVADOS NESTE NAVEGADOR</span></div></div>
+    </section>
+    <section class="actionsbar" aria-label="Ações do calendário">
+      <div class="filter-controls"><button type="button" class="chip selected" data-filter="todos">Todos <span id="filterCount">10</span></button><button type="button" class="chip" data-filter="foto">Fotos</button><button type="button" class="chip" data-filter="video">Vídeos</button></div>
+      <div class="action-controls"><button type="button" class="quiet-action" id="editToggle">✎ Editar legendas</button><button type="button" class="quiet-action" id="copySummary">⧉ Copiar feedback</button><button type="button" class="quiet-action" id="downloadFeedback">↓ Baixar avaliação</button></div>
+    </section>
+    <div class="notice"><span class="notice-icon">ⓘ</span><p><strong>Aprovação simples:</strong> escolha o status e escreva observações em cada publicação. As alterações ficam neste navegador; para a equipe receber suas decisões, use <b>Enviar feedback</b> ou <b>Copiar feedback</b>. O link público não salva as aprovações de todos em um banco.</p></div>
+    <section class="posts-section" aria-labelledby="postsTitle"><div class="section-heading"><div><p class="section-overline">DO PLANEJAMENTO À PUBLICAÇÃO</p><h2 id="postsTitle">Os posts do mês</h2></div><p>Fotos e legendas sujeitas à aprovação.</p></div><div id="postGrid" class="post-grid"></div></section>
+    <section class="footer-banner"><span>1727</span><p>Cada detalhe merece cuidado.<br><small>Planejamento editorial da 1727 Coffee Roasters</small></p><button type="button" id="backToTop">Voltar ao topo ↑</button></section>
+  </main>
+  <dialog id="imageDialog" aria-label="Visualização ampliada da foto"><button type="button" class="close-dialog" id="closeDialog" aria-label="Fechar">×</button><img id="largePhoto" alt="Imagem ampliada"><p id="dialogCaption"></p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="data/calendario.js"></script><script src="assets/app.js"></script>
+</body>
+</html>
