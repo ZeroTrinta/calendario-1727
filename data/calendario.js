@@ -5,24 +5,24 @@ window.CALENDAR_DATA = {
   "months": [
     {
       "id": "2026-11",
-      "label": "Novembro de 2026",
-      "summary": "O sabor está nos detalhes.",
-      "status": "Em aprovação",
+      "label": "Novembro e início de dezembro de 2026",
+      "summary": "Publicações reorganizadas a partir de 17/11, com frequência a cada dois dias, até 05/12.",
+      "status": "Aprovado · Em publicação",
       "posts": [
         {
           "id": "01",
-          "date": "2026-11-09",
+          "date": "2026-11-17",
           "type": "foto",
           "title": "Coado do dia",
           "category": "Cafeteria",
-          "caption": "Tem dias que pedem calma, aroma no ar e um bom coado passando na hora. ☕\n\nAqui na 1727, cada preparo é feito com atenção aos detalhes para entregar uma xícara equilibrada, acolhedora e cheia de sabor.\n\nPasse por aqui e descubra o café do dia. 🤎",
+          "caption": "Tem dias que pedem calma, aroma no ar e um bom café coado passando na hora. ☕🤎\n\nAqui na 1727, cada preparo é feito com atenção aos detalhes, respeitando as características de cada grão para entregar uma xícara cheia de sabor.\n\nPorque um bom café não é só sobre beber, é também sobre aproveitar o momento.\n\nQue tal fazer uma pausa e tomar um café com a gente?\n\nEsperamos você na 1727! ✨\n\n#1727 #CafeEspecial #CafeCoado #CafeBrasileiro #CoffeeLovers #Campinas",
           "image": "imagens/2026-11/01_coado_do_dia.jpg",
           "originalFilename": "20241112_163538.jpg",
           "filename": "01_coado_do_dia.jpg"
         },
         {
           "id": "02",
-          "date": "2026-11-11",
+          "date": "2026-11-19",
           "type": "video",
           "title": "Cappuccino tradicional da casa",
           "category": "Vídeo / Reels",
@@ -32,7 +32,7 @@ window.CALENDAR_DATA = {
         },
         {
           "id": "03",
-          "date": "2026-11-13",
+          "date": "2026-11-21",
           "type": "foto",
           "title": "Uma pausa doce",
           "category": "Doces",
@@ -43,7 +43,7 @@ window.CALENDAR_DATA = {
         },
         {
           "id": "04",
-          "date": "2026-11-16",
+          "date": "2026-11-23",
           "type": "foto",
           "title": "Momento café",
           "category": "Espresso",
@@ -54,7 +54,7 @@ window.CALENDAR_DATA = {
         },
         {
           "id": "05",
-          "date": "2026-11-18",
+          "date": "2026-11-25",
           "type": "foto",
           "title": "Salgado da vitrine",
           "category": "Comidas",
@@ -65,7 +65,7 @@ window.CALENDAR_DATA = {
         },
         {
           "id": "06",
-          "date": "2026-11-20",
+          "date": "2026-11-27",
           "type": "foto",
           "title": "Detalhes do preparo",
           "category": "Bastidores",
@@ -76,7 +76,7 @@ window.CALENDAR_DATA = {
         },
         {
           "id": "07",
-          "date": "2026-11-23",
+          "date": "2026-11-29",
           "type": "foto",
           "title": "Doces da casa",
           "category": "Doces",
@@ -87,7 +87,7 @@ window.CALENDAR_DATA = {
         },
         {
           "id": "08",
-          "date": "2026-11-25",
+          "date": "2026-12-01",
           "type": "video",
           "title": "Bastidores da torra",
           "category": "Vídeo / Reels",
@@ -97,7 +97,7 @@ window.CALENDAR_DATA = {
         },
         {
           "id": "09",
-          "date": "2026-11-27",
+          "date": "2026-12-03",
           "type": "foto",
           "title": "Simplicidade que acolhe",
           "category": "Doces e salgados",
@@ -108,7 +108,7 @@ window.CALENDAR_DATA = {
         },
         {
           "id": "10",
-          "date": "2026-11-30",
+          "date": "2026-12-05",
           "type": "foto",
           "title": "Cuidado em cada xícara",
           "category": "Atendimento",
